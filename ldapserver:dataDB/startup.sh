@@ -1,2 +1,4 @@
-/usr/bin/echo "starting slapd..."
-/usr/sbin/slapd -u ldap -h "ldap:/// ldaps:/// ldapi:///" && echo "ok slap slapdd"
+#! /bin/bash
+#/usr/bin/echo "starting slapd..."
+
+/usr/sbin/slapd -d0 -u ldap -h "ldap:/// ldaps:/// ldapi:///"
